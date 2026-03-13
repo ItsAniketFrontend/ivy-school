@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVY Smart Buds School — Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo-area" href="index.html">
+      <img src="images/qt=q_95.webp" alt="">
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">🌟 About</a></li>
+      <li><a href="admission.html">📝 Admission</a></li>
+      <li><a href="gallery.html">🖼️ Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">📞 Contact</a></li>
+    </ul>
+
+    <!-- Hamburger button (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">🌟 About Us</a></li>
+    <li><a href="admission.html">📝 Admission</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="contact.html">📞 Contact Us</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- Page Hero -->
+  <div class="page-hero hero-blue">
+    <h1 style="color:var(--blue)">School Gallery 🖼️</h1>
+    <p>Moments of joy, learning, and togetherness at IVY Smart Buds School</p>
+  </div>
+
+  <section>
+    <div class="section-inner">
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="classroom">Classroom</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="science">Science</button>
+        <button class="filter-btn" data-filter="arts">Arts &amp; Crafts</button>
+        <button class="filter-btn" data-filter="annual">Annual Day</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item wide" data-category="annual">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#4CAF50,#2e7d32)">
+            🎓
+            <span>Annual Day Celebration</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Annual Day 2024 – Grand Celebration</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="science">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#1E88E5,#1565c0)">
+            🔬
+            <span>Science Lab</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Experiments in Science Lab</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#FF6B35,#c62828)">
+            🏏
+            <span>Sports Day</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Inter-School Sports Day</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="arts">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#8E24AA,#4a148c)">
+            🎨
+            <span>Art Class</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Creative Arts &amp; Crafts</div>
+          </div>
+        </div>
+
+        <div class="gallery-item wide" data-category="events">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#FFD600,#f57f17)">
+            🌳
+            <span>Nature Walk &amp; Environment Day</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Nature Walk &amp; Environmental Awareness Day</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="classroom">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#00897B,#004d40)">
+            📚
+            <span>Library Reading</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Story Time in Our Library</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#E53935,#b71c1c)">
+            🎭
+            <span>Drama Club</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">School Drama &amp; Theatre</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="classroom">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#0288D1,#01579b)">
+            💻
+            <span>Computer Lab</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Digital Learning Lab</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="arts">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#F06292,#880e4f)">
+            🎵
+            <span>Music &amp; Dance</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Music &amp; Dance Classes</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sports">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#43A047,#1b5e20)">
+            ⚽
+            <span>Football Practice</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Football Practice Session</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="annual">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#FB8C00,#e65100)">
+            🏆
+            <span>Prize Distribution</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Annual Prize Distribution Ceremony</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="classroom">
+          <div class="gallery-thumb" style="background:linear-gradient(135deg,#5C6BC0,#1a237e)">
+            🖐️
+            <span>Classroom Activity</span>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Interactive Classroom Sessions</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Want Your Child to Be Part of These Memories? 📸</h2>
+    <p>Apply for admission and let your child create unforgettable moments.</p>
+    <a href="admission.html" class="btn" style="background:white;color:var(--green);font-family:'Fredoka One',cursive;font-size:1.1rem;">Apply for Admission →</a>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="f-logo">🌿 IVY Smart Buds</div>
+        <p>Transforming Learning into Doing. A school that nurtures curious minds, builds strong character, and prepares children for a bright future.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="admission.html">Class 1 &amp; 2 — Foundation</a></li>
+          <li><a href="admission.html">Class 3 &amp; 4 — Primary</a></li>
+          <li><a href="admission.html">Class 5 — Upper Primary</a></li>
+          <li><a href="admission.html">Class 6 &amp; 7 — Middle School</a></li>
+          <li><a href="admission.html">Class 8 — Senior Middle</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a>📍 Sector 12, New Delhi</a></li>
+          <li><a>📞 +91 98765 43210</a></li>
+          <li><a>✉️ info@ivysmartbuds.edu.in</a></li>
+          <li><a>🕐 Mon–Fri: 8AM–3PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>IVY Smart Buds School</span>. All Rights Reserved. | Crafted with 💚 for a brighter tomorrow.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

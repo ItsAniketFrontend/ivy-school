@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVY Smart Buds School — Admissions</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo-area" href="index.html">
+      <img src="images/qt=q_95.webp" alt="">
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">🌟 About</a></li>
+      <li><a href="admission.html">📝 Admission</a></li>
+      <li><a href="gallery.html">🖼️ Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">📞 Contact</a></li>
+    </ul>
+
+    <!-- Hamburger button (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">🌟 About Us</a></li>
+    <li><a href="admission.html">📝 Admission</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="contact.html">📞 Contact Us</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- Page Hero -->
+  <div class="page-hero hero-yellow">
+    <h1 style="color:var(--orange)">Admissions Open 📝</h1>
+    <p>Academic Year 2025–26 | Classes 1 to 8 | Limited Seats Available</p>
+  </div>
+
+  <!-- Content Wrapper -->
+  <section>
+    <div class="section-inner">
+
+      <!-- Steps -->
+      <div class="section-title">How to <span style="color:var(--orange)">Apply</span> 🚀</div>
+      <div class="section-divider" style="background:linear-gradient(90deg,var(--orange),var(--yellow));margin-bottom:32px;"></div>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Fill the Form</h3>
+          <p>Complete the online application form below with all required student and parent details.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Document Upload</h3>
+          <p>Submit birth certificate, passport photos, and previous school records (if applicable).</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Interaction Session</h3>
+          <p>Attend a brief informal interaction with our academic team and school tour.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Confirmation</h3>
+          <p>Receive your admission letter and complete the fee payment to confirm the seat.</p>
+        </div>
+      </div>
+
+      <!-- Application Form -->
+      <div class="admission-form-wrap">
+        <div class="form-title">📋 Admission Application Form</div>
+        <form id="admissionForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Student's First Name *</label>
+              <input type="text" placeholder="Enter first name" required />
+            </div>
+            <div class="form-group">
+              <label>Student's Last Name *</label>
+              <input type="text" placeholder="Enter last name" required />
+            </div>
+            <div class="form-group">
+              <label>Date of Birth *</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Gender *</label>
+              <select required>
+                <option value="">Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Applying for Class *</label>
+              <select required>
+                <option value="">Select class</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+                <option>Class 5</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Academic Year *</label>
+              <select>
+                <option>2025 – 2026</option>
+                <option>2026 – 2027</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Parent / Guardian Name *</label>
+              <input type="text" placeholder="Parent's full name" required />
+            </div>
+            <div class="form-group">
+              <label>Relationship *</label>
+              <select required>
+                <option value="">Select</option>
+                <option>Father</option>
+                <option>Mother</option>
+                <option>Guardian</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Contact Number *</label>
+              <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" placeholder="parent@email.com" required />
+            </div>
+            <div class="form-group full">
+              <label>Home Address</label>
+              <textarea placeholder="Enter your full residential address"></textarea>
+            </div>
+            <div class="form-group full">
+              <label>Previous School (if applicable)</label>
+              <input type="text" placeholder="Name of previous school attended" />
+            </div>
+            <div class="form-group full">
+              <label>Special Requirements or Notes</label>
+              <textarea placeholder="Please mention any medical conditions, learning needs, or other relevant information"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Submit Application 🎓</button>
+        </form>
+      </div>
+
+      <!-- Fee Structure -->
+      <div class="fee-table">
+        <h2>📊 Fee Structure 2025–26</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Admission Fee</th>
+              <th>Annual Fee</th>
+              <th>Monthly Fee</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Class 1 &amp; 2</strong></td>
+              <td>₹5,500</td><td>₹20,000</td><td>₹1,700</td>
+              <td><span class="badge badge-green">Open</span></td>
+            </tr>
+            <tr>
+              <td><strong>Class 3 &amp; 4</strong></td>
+              <td>₹6,000</td><td>₹23,000</td><td>₹1,950</td>
+              <td><span class="badge badge-green">Open</span></td>
+            </tr>
+            <tr>
+              <td><strong>Class 5</strong></td>
+              <td>₹6,500</td><td>₹25,000</td><td>₹2,100</td>
+              <td><span class="badge badge-orange">Filling Fast</span></td>
+            </tr>
+            <tr>
+              <td><strong>Class 6 &amp; 7</strong></td>
+              <td>₹7,000</td><td>₹28,000</td><td>₹2,400</td>
+              <td><span class="badge badge-orange">Filling Fast</span></td>
+            </tr>
+            <tr>
+              <td><strong>Class 8</strong></td>
+              <td>₹7,500</td><td>₹30,000</td><td>₹2,550</td>
+              <td><span class="badge badge-blue">Limited</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Have Questions About Admission? 🤔</h2>
+    <p>Our admissions team is happy to guide you through every step.</p>
+    <a href="contact.html" class="btn" style="background:white;color:var(--green);font-family:'Fredoka One',cursive;font-size:1.1rem;">Contact Us →</a>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="f-logo">🌿 IVY Smart Buds</div>
+        <p>Transforming Learning into Doing. A school that nurtures curious minds, builds strong character, and prepares children for a bright future.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="admission.html">Class 1 &amp; 2 — Foundation</a></li>
+          <li><a href="admission.html">Class 3 &amp; 4 — Primary</a></li>
+          <li><a href="admission.html">Class 5 — Upper Primary</a></li>
+          <li><a href="admission.html">Class 6 &amp; 7 — Middle School</a></li>
+          <li><a href="admission.html">Class 8 — Senior Middle</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a>📍 Sector 12, New Delhi</a></li>
+          <li><a>📞 +91 98765 43210</a></li>
+          <li><a>✉️ info@ivysmartbuds.edu.in</a></li>
+          <li><a>🕐 Mon–Fri: 8AM–3PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>IVY Smart Buds School</span>. All Rights Reserved. | Crafted with 💚 for a brighter tomorrow.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

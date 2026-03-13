@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IVY Smart Buds School — Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a class="logo-area" href="index.html">
+      <img src="images/qt=q_95.webp" alt="">
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">🌟 About</a></li>
+      <li><a href="admission.html">📝 Admission</a></li>
+      <li><a href="gallery.html">🖼️ Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">📞 Contact</a></li>
+    </ul>
+
+    <!-- Hamburger button (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">🌟 About Us</a></li>
+    <li><a href="admission.html">📝 Admission</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="contact.html">📞 Contact Us</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════════ -->
+<main>
+
+  <!-- Page Hero -->
+  <div class="page-hero hero-pink">
+    <h1 style="color:var(--red)">Contact Us 📞</h1>
+    <p>We'd love to hear from you — reach out for admissions, queries, or just to say hello!</p>
+  </div>
+
+  <!-- Contact Grid -->
+  <div class="contact-content">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <h2>Get in Touch 💬</h2>
+
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:#e8f5e9;">📍</div>
+        <div>
+          <h4>School Address</h4>
+          <p>IVY Smart Buds School, Sector 12,<br>Opposite City Park, New Delhi – 110001, India</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:#e3f2fd;">📞</div>
+        <div>
+          <h4>Phone Numbers</h4>
+          <p>+91 98765 43210 (Admissions)<br>+91 11 2345 6789 (Front Desk)</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:#fff3e0;">✉️</div>
+        <div>
+          <h4>Email Addresses</h4>
+          <p>admissions@ivysmartbuds.edu.in<br>info@ivysmartbuds.edu.in</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon" style="background:#fce4ec;">🕐</div>
+        <div>
+          <h4>School Hours</h4>
+          <p>Mon – Fri: 8:00 AM – 3:00 PM<br>Office: 9:00 AM – 5:00 PM | Sat: 9 AM – 1 PM</p>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Fredoka One',cursive;font-size:1.2rem;margin-top:20px;margin-bottom:12px;">Follow Us 🌐</h3>
+      <div class="social-row">
+        <div class="social-btn" style="background:#1877f2;color:white;" title="Facebook">f</div>
+        <div class="social-btn" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;" title="Instagram">📷</div>
+        <div class="social-btn" style="background:#1da1f2;color:white;" title="Twitter">🐦</div>
+        <div class="social-btn" style="background:#ff0000;color:white;" title="YouTube">▶</div>
+        <div class="social-btn" style="background:#25d366;color:white;" title="WhatsApp">💬</div>
+      </div>
+
+      <div class="map-box">
+        <span style="font-size:2.5rem;">🗺️</span>
+        <strong>IVY Smart Buds School</strong>
+        <span style="font-size:13px;">Sector 12, New Delhi – 110001</span>
+      </div>
+    </div>
+
+    <!-- Right: Message Form -->
+    <div class="contact-form-box">
+      <h2>Send Us a Message ✉️</h2>
+      <form id="contactForm" class="contact-form-inner">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" />
+        </div>
+        <div class="form-group">
+          <label>Subject *</label>
+          <select required>
+            <option value="">Select a subject</option>
+            <option>Admission Enquiry</option>
+            <option>Fee Related</option>
+            <option>Academics</option>
+            <option>Events &amp; Activities</option>
+            <option>General Enquiry</option>
+            <option>Feedback / Suggestion</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message *</label>
+          <textarea rows="5" placeholder="Tell us how we can help you..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message 📨</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Ready to Enrol Your Child? 🌟</h2>
+    <p>Don't wait — Classes 1 to 8 seats are filling up fast for 2025–26.</p>
+    <a href="admission.html" class="btn" style="background:white;color:var(--green);font-family:'Fredoka One',cursive;font-size:1.1rem;">Apply for Admission →</a>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="f-logo">🌿 IVY Smart Buds</div>
+        <p>Transforming Learning into Doing. A school that nurtures curious minds, builds strong character, and prepares children for a bright future.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="admission.html">Class 1 &amp; 2 — Foundation</a></li>
+          <li><a href="admission.html">Class 3 &amp; 4 — Primary</a></li>
+          <li><a href="admission.html">Class 5 — Upper Primary</a></li>
+          <li><a href="admission.html">Class 6 &amp; 7 — Middle School</a></li>
+          <li><a href="admission.html">Class 8 — Senior Middle</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a>📍 Sector 12, New Delhi</a></li>
+          <li><a>📞 +91 98765 43210</a></li>
+          <li><a>✉️ info@ivysmartbuds.edu.in</a></li>
+          <li><a>🕐 Mon–Fri: 8AM–3PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>IVY Smart Buds School</span>. All Rights Reserved. | Crafted with 💚 for a brighter tomorrow.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
