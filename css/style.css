@@ -180,7 +180,7 @@ nav {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 72px;
+  top: 100px;
   left: 0;
   right: 0;
   background: white;
